@@ -21,7 +21,7 @@ function my_mouseleave(e){
 }
 canvas.addEventListener("mousemove",my_mousemove)
 function my_mousemove(e){
-    mouseEvent="mousemove";
+    
     console.log(mouseEvent);
     current_position_of_mousex=e.clientX-canvas.offsetLeft;
     current_position_of_mousey=e.clientY-canvas.offsetTop;
@@ -39,5 +39,5 @@ function my_mousemove(e){
     ctx.stroke();
     }
     last_position_of_x=current_position_of_mousex;
-    last_position_of_y=current_position_of_mousey;
+    last_position_of_y=current_position_of_mousey; 
 }
